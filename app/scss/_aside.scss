@@ -1,0 +1,58 @@
+.aside{
+   flex: 0 0 34.2%;
+   max-width: 34.2%;
+   background-color: $red;
+   
+   color: #fff;
+   &__box{
+      padding: 32px;
+      border-bottom: 1px solid $dark-red;
+
+      ul{
+         li{
+            margin-bottom: 9px;
+            &:last-of-type{
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+   h2{
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 16px;
+   }
+   .clanek{
+      display: block;
+      margin-bottom: 35px;
+      &:last-of-type{
+         margin-bottom: 16px;
+      }
+      h2{
+         text-transform: initial;
+         font-size: 1rem;
+         color: $red;
+         background-color: #fff;
+         display: inline-block;
+         padding: 2px 8px;
+         margin-bottom: 8px;
+      }
+      h6{
+         color: #fff;
+      }
+   }
+   .aside__box ul li a,
+   .link{
+      color: #fff;
+    
+      &::before{
+         background-image: url('../images/svg/link-white.svg');
+      }
+   }
+}
+
+@media(max-width:980px){
+   .aside{
+      display: none;
+   }
+}

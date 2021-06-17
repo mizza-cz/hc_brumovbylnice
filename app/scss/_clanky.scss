@@ -1,0 +1,50 @@
+.clanky{
+   padding: 32px;
+   background-color: #f2f4f8;
+}
+.clanek{
+   display: flex;
+   margin-bottom: 32px;
+   &:hover{
+      h2{
+         text-decoration: underline;
+         color: $dark-red;
+      }
+   }
+   &__info{
+      padding: 1px 0px 10px 32px;
+   }
+   &__img{
+      max-width: 280px;
+      height: 187px;
+      width: 100%;
+      img{
+         object-fit: cover;
+      }
+   }
+   h2{
+      color: $red;
+      margin-bottom: 9px;
+   }
+   h6{
+      color: $gray;
+      margin-bottom: 17px;
+   }
+}
+@media(max-width:680px){
+   .clanky{
+      padding: 0 0 16px 0;
+     
+   }
+   .clanek{
+      flex-wrap: wrap;
+   }
+   .clanek__info{
+      padding-left: 0;
+   }
+   .clanek__img{
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+   }
+}

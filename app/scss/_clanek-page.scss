@@ -1,0 +1,92 @@
+.clanek-page{
+   .clanky{
+      .clanek:last-child{
+         margin-bottom: 0;
+      }
+      .clanek__info p{
+         font-size: 0.875rem;
+         line-height: 1.57;
+      }
+      .clanek__info h6{
+         margin-bottom: 18px;
+      }
+      .clanek__info h2{
+         margin-bottom: 8px;
+      }
+      .clanek__img{
+         max-width: 38%;
+         flex: 0 0 38%;
+         width: 100%;
+         height: 187px;
+      }
+      h2{
+         color: $red;
+         margin-bottom: 17px;
+      }
+   }
+   p:last-child{
+      margin-bottom: 0;
+   }
+  h4{
+   margin-top: 32px;
+   margin-bottom: 16px;
+  }
+   h6{
+      color: $gray;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+   }
+   h1{
+      margin-bottom: 16px;
+   }
+   .clanek__content{
+      padding: 32px 72px;
+   }
+   .clanek__img{
+      max-width: 100%;
+      height: auto;
+   }
+
+}
+.tags{
+   display: flex;
+   margin-bottom: 16px;
+   li+li{
+      margin-left: 8px;
+   }
+   li{
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 1px 5px 1px 8px;
+      background-color: $gray;
+      font-weight: 700;
+      font-family: input-mono-condensed, monospace;
+   }
+}
+.perex{
+   font-weight: 700;
+   
+}
+
+@media(max-width:1240px){
+   .clanek-page .clanek__content{
+      padding: 32px;
+   }
+}
+@media(max-width:980px){
+   .clanek-page .clanky .clanek__img{
+      max-width: 100%;
+      flex: 100%;
+      height: auto;
+   }
+}
+@media(max-width: 640px){
+   .clanek-page .clanek__content{
+      padding: 15px 0;
+   }
+   h1{
+      font-size: 1.8rem;
+   }
+}

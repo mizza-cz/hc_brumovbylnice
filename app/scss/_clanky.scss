@@ -34,14 +34,22 @@
 @media(max-width:680px){
    .clanky{
       padding: 16px 0 16px 0;
-     
+      background-color: transparent;
+      .clanek{
+         margin-bottom: 16px;
+      }
+      .clanek:last-of-type{
+         margin-bottom: 0;
+      }
+     .link{
+        display: none;
+     }
    }
    .clanek{
       flex-wrap: wrap;
    }
    .clanek__info{
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 0;
    }
    .clanek__img{
       max-width: 100%;

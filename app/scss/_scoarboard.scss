@@ -116,7 +116,7 @@
 }
 @media(max-width:580px){
    .scoarboard__btn{
-     display: none;
+     display: none !important;
    }
   
    .scoarboard__inner{

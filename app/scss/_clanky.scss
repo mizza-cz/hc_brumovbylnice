@@ -33,14 +33,15 @@
 }
 @media(max-width:680px){
    .clanky{
-      padding: 16px;
+      padding: 16px 0 16px 0;
      
    }
    .clanek{
       flex-wrap: wrap;
    }
    .clanek__info{
-      padding-left: 0;
+      padding-left: 16px;
+      padding-right: 16px;
    }
    .clanek__img{
       max-width: 100%;

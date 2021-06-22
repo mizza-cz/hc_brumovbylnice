@@ -1,4 +1,5 @@
 $(function(){
+   
    $('.navbar__menu').on('click', function () {
       $('.navbar__inner').slideToggle();
     });
@@ -35,5 +36,8 @@ $(function(){
       ]
 
    });
+   $('select, input.radio, input.checkbox').styler();
+ 
+  
 // end
 });

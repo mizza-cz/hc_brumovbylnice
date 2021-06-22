@@ -1,0 +1,96 @@
+.zapasy-page{
+   margin-bottom: 32px;
+   &__result.green a{
+      color: $green;
+      text-decoration: underline;
+   }
+   &__result.red a{
+      color: $red;
+      text-decoration: underline;
+   }
+   &__result.green,
+   &__result.red{
+      text-decoration: underline;
+   }
+   &__result,
+   &__result a{
+      font-size: 1.25rem;
+      font-family: input-mono-condensed, monospace;
+      font-weight: 700;
+      
+   }
+   &__menu{
+      background-color: #f2f4f8;
+      padding: 9px 16px;
+      margin-bottom: 16px;
+      .red{
+         text-decoration: none;
+         color: $red;
+      }
+      a{
+         font-weight: 700;
+         color: #000;
+         font-family: 'Inter', sans-serif;
+         text-decoration: underline;
+      }
+   }
+   h1{
+      margin-bottom: 16px;
+   }
+   h2{
+      color: $red;
+   }
+  &__inner{
+   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   padding: 32px 72px;
+  }
+  &__box{
+   font-size: 1.25rem;
+   line-height: 1.4;
+     h4{
+      display: inline-block;
+      
+     }
+  }
+  &__item{
+     align-items: flex-end;
+     padding: 16px 0 15px 0;
+     display: flex;
+     justify-content: space-between;
+     
+     h6{
+        color: $gray;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+     }
+  }
+}
+
+
+@media(max-width:880px){
+   .zapasy-page__inner{
+      padding: 32px;
+   }
+}
+@media(max-width:720px){
+   .zapasy-page__box h4{
+      display: block;
+   }
+   .zapasy-page__team{
+      line-height: .5;
+   }
+   .zapasy-page__item{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
+@media(max-width:660px){
+   .zapasy-page__menu{
+      margin-left: -32px;
+      margin-right: -32px;
+      text-align: center;
+   }
+}
